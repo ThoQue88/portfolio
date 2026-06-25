@@ -1,0 +1,895 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUẾTHƠ. PORTFOLIO</title>
+    <!-- Google Fonts supporting Vietnamese diacritics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@700;800&family=Space+Grotesk:wght@400;500;700&family=Montserrat:wght@400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&family=Be+Vietnam+Pro:wght@400;600;800&family=Roboto:wght@400;500;700&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Lucide Icons for high-quality SVG support -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <!-- Custom Cursor for Y2K Aesthetic -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+      <div class="logo">
+        <a href="#intro">QUẾTHƠ.</a>
+      </div>
+
+      <div class="nav-right">
+        <!-- Hamburger Menu -->
+        <button class="menu-btn" aria-label="Toggle menu" id="menu-toggle">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-menu" id="mobile-menu-overlay">
+      <button class="close-menu" id="close-menu-btn">&times;</button>
+      <div class="mobile-links">
+        <a href="#intro" class="mobile-link">GIỚI THIỆU</a>
+        <a href="#highlights" class="mobile-link">LIVESTREAM</a>
+        <a href="#connect" class="mobile-link">LIÊN HỆ</a>
+      </div>
+    </div>
+
+    <!-- Main Container -->
+    <main class="main-content">
+      <!-- Hero / Top Grid Section -->
+      <section class="hero-section" id="intro">
+        <!-- Left & Center: Interactive Collage -->
+        <div class="collage-container">
+          <!-- Instagram Account Card (Floating top right of grid) -->
+          <div
+            class="instagram-card-wrapper floating-element"
+            style="--float-speed: 6s; --float-delay: 0s"
+          >
+            <div class="instagram-card">
+              <div class="insta-avatar">
+                <img
+                  src="images/Gemini_Generated_Image_r95746r95746r957.png"
+                  alt="Instagram Avatar"
+                  id="img-insta-avatar"
+                />
+              </div>
+              <div class="insta-info">
+                <h3 class="insta-username">Instagram:</h3>
+                <p class="insta-sub">Theo dõi hoạt động của mình nhé</p>
+              </div>
+              <a
+                href="https://www.instagram.com/qebther__/"
+                target="_blank"
+                class="insta-view-btn"
+              >
+                <span>Xem</span>
+                <i data-lucide="eye" class="eye-icon"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image 1: Main Left Vertical (Forest View) -->
+          <div class="collage-card large-vertical-card" id="card-main-left">
+            <div class="image-wrapper">
+              <img
+                src="images/IMG_3353.JPG"
+                alt="Model in forest"
+                id="img-main-left"
+              />
+              <div class="image-overlay-label"></div>
+            </div>
+            <!-- Pointer circle annotation -->
+            <div class="pointer-annotation" style="top: 65%; left: 45%">
+              <span class="pointer-dot"></span>
+              <span
+                class="pointer-line"
+                style="width: 120px; transform: rotate(15deg)"
+              ></span>
+            </div>
+          </div>
+
+          <!-- Image 4: Middle Left Overlay Card -->
+          <div
+            class="collage-card middle-left-overlay-card"
+            id="card-middle-left"
+          >
+            <div class="image-wrapper">
+              <img
+                src="images/IMG_0644.JPG"
+                alt="Model Detail View"
+                id="img-middle-left"
+              />
+            </div>
+          </div>
+
+          <!-- Image 2: Hexagonal/Cutout Badge (Middle overlay) -->
+          <div
+            class="collage-card cutout-badge-card floating-element"
+            style="--float-speed: 8s; --float-delay: 1s"
+            id="card-center-cutout"
+          >
+            <div class="badge-border-wrap">
+              <div class="image-wrapper badge-clip">
+                <img
+                  src="images/IMG_1446.JPG"
+                  alt="Model Detail"
+                  id="img-center-cutout"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Image 3: Standing Model on the Right -->
+          <div
+            class="collage-card standing-model-card"
+            id="card-right-standing"
+          >
+            <!-- Text background blending behind the model -->
+            <div class="bg-y2k-text"></div>
+            <div class="image-wrapper">
+              <img
+                src="images/IMG_5161.JPG"
+                alt="Model Standing"
+                id="img-right-standing"
+              />
+            </div>
+          </div>
+
+          <!-- Cute peeking black cat -->
+          <div class="peeking-cat" id="cat-character">
+            <svg
+              viewBox="0 0 100 100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <!-- Cat head shape -->
+              <path d="M10 90 Q30 50 50 50 Q70 50 90 90 Z" fill="#111111" />
+              <!-- Cat ears -->
+              <path d="M15 65 L5 25 L35 55 Z" fill="#111111" />
+              <path d="M85 65 L95 25 L65 55 Z" fill="#111111" />
+              <!-- Inner ears (pink highlight) -->
+              <path d="M13 60 L8 33 L27 53 Z" fill="#ff7da7" />
+              <path d="M87 60 L92 33 L73 53 Z" fill="#ff7da7" />
+              <!-- Cat eyes -->
+              <ellipse
+                cx="35"
+                cy="70"
+                rx="6"
+                ry="10"
+                fill="#ccff00"
+                class="cat-eye-left"
+              />
+              <ellipse
+                cx="65"
+                cy="70"
+                rx="6"
+                ry="10"
+                fill="#ccff00"
+                class="cat-eye-right"
+              />
+              <!-- Cat pupils -->
+              <ellipse cx="35" cy="70" rx="1.5" ry="7" fill="#111111" />
+              <ellipse cx="65" cy="70" rx="1.5" ry="7" fill="#111111" />
+              <!-- Cat nose and whiskers -->
+              <polygon points="48,76 52,76 50,79" fill="#ff7da7" />
+              <path
+                d="M30 78 H15 M30 82 H10 M70 78 H85 M70 82 H90"
+                stroke="#111111"
+                stroke-width="1.5"
+              />
+            </svg>
+          </div>
+
+          <!-- Facebook Link Button -->
+          <div class="update-pictures-wrap">
+            <a
+              href="https://www.facebook.com/anan.thy.10/"
+              target="_blank"
+              class="update-pictures-btn"
+              id="facebook-profile-btn"
+              style="
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+              "
+            >
+              <i data-lucide="facebook" class="gallery-icon"></i>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Side: Profile / CV Accordion -->
+        <div class="defense-panel profile-panel">
+          <div class="panel-header">
+            <div class="profile-role">HOST LIVESTREAM</div>
+            <h2 class="profile-name">LÊ NGUYỄN QUẾ THƠ</h2>
+
+            <div class="profile-contact">
+              <a href="tel:0977605472" class="contact-pill">
+                <i data-lucide="phone" class="contact-icon"></i>
+                <span>0977 605 472</span>
+              </a>
+              <a href="mailto:quetho1906@gmail.com" class="contact-pill">
+                <i data-lucide="mail" class="contact-icon"></i>
+                <span>quetho1906@gmail.com</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Accordion Container -->
+          <div class="accordion-container">
+            <!-- Accordion Item 1: Mục tiêu -->
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span class="header-title">
+                  <i data-lucide="target" class="shield-icon"></i>
+                  <span>MỤC TIÊU NGHỀ NGHIỆP</span>
+                </span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <p class="cv-text">
+                    Phát triển kỹ năng giao tiếp, xây dựng thương hiệu cá nhân
+                    và trở thành KOL/Streamer trong lĩnh vực bán hàng online.
+                    Học hỏi thêm nhiều kĩ năng từ các anh chị đi trước, thu hút
+                    người xem và tăng doanh thu bán hàng.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2: Kỹ năng -->
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span class="header-title">
+                  <i data-lucide="star" class="shield-icon"></i>
+                  <span>KỸ NĂNG NỔI BẬT</span>
+                </span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <ul class="cv-list">
+                    <li>
+                      Kỹ năng giao tiếp tốt, nói chuyện tự tin trước camera.
+                    </li>
+                    <li>Khả năng xử lý tình huống nhanh khi livestream.</li>
+                    <li>Biết tạo không khí vui vẻ, giữ chân người xem.</li>
+                    <li>
+                      Học hỏi kịch bản và thích nghi nhanh với môi trường công
+                      ty.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3: Kinh nghiệm -->
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span class="header-title">
+                  <i data-lucide="briefcase" class="shield-icon"></i>
+                  <span>KINH NGHIỆM LÀM VIỆC</span>
+                </span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-content-inner cv-scrollable">
+                  <div class="cv-exp-item">
+                    <div class="cv-exp-header">
+                      <h4 class="cv-exp-title">DP AUTO / XƯỞNG ĐÈN DP AUTO</h4>
+                      <span class="cv-exp-date">12/2025 - 04/2026</span>
+                    </div>
+                    <ul class="cv-sublist">
+                      <li>Giới thiệu sản phẩm trực tiếp trên livestream.</li>
+                      <li>Tương tác với khách hàng, trả lời comment.</li>
+                      <li>Hỗ trợ chốt đơn và xử lý đơn hàng.</li>
+                    </ul>
+                  </div>
+
+                  <div class="cv-exp-item">
+                    <div class="cv-exp-header">
+                      <h4 class="cv-exp-title">SAAM CLOTHES</h4>
+                      <span class="cv-exp-date">2023 - 2024</span>
+                    </div>
+                    <ul class="cv-sublist">
+                      <li>
+                        Tư vấn sản phẩm (quần áo, phụ kiện) phù hợp với nhu cầu
+                        và phong cách khách hàng.
+                      </li>
+                      <li>
+                        Tham gia hỗ trợ livestream bán hàng (đọc comment, lên
+                        đơn, chuẩn bị sản phẩm).
+                      </li>
+                      <li>
+                        Có kinh nghiệm đứng phụ/live cùng host, giới thiệu sản
+                        phẩm cơ bản.
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="cv-exp-item">
+                    <div class="cv-exp-header">
+                      <h4 class="cv-exp-title">O FOR ORDINARY SERUM</h4>
+                      <span class="cv-exp-date">02/2026 - HIỆN TẠI</span>
+                    </div>
+                    <ul class="cv-sublist">
+                      <li>
+                        Livestream giới thiệu và bán các sản phẩm mỹ phẩm, chăm
+                        sóc da.
+                      </li>
+                      <li>
+                        Tương tác trực tiếp với khách hàng, giải đáp thắc mắc và
+                        tư vấn sản phẩm phù hợp.
+                      </li>
+                      <li>
+                        Phối hợp với đội ngũ vận hành để xử lý đơn hàng và chăm
+                        sóc khách hàng sau bán.
+                      </li>
+                      <li>
+                        Tham gia xây dựng kịch bản livestream, chương trình
+                        khuyến mãi.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 4: Học vấn -->
+            <div class="accordion-item">
+              <button class="accordion-header" aria-expanded="false">
+                <span class="header-title">
+                  <i data-lucide="graduation-cap" class="shield-icon"></i>
+                  <span>HỌC VẤN HỌC LỰC</span>
+                </span>
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <div class="cv-edu-item">
+                    <h4 class="cv-edu-title">CAO ĐẰNG KINH TẾ HỒ CHÍ MINH</h4>
+                    <p class="cv-edu-desc">Chuyên ngành: Công nghệ thông tin</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-features cards / Info -->
+          <div class="quick-stats-card">
+            <div class="stat-item">
+              <span class="stat-val">500+ giờ</span>
+              <span class="stat-lbl">Livestream thực tế</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-val">3+</span>
+              <span class="stat-lbl">Thương hiệu đồng hành</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bottom Section: Detailed description + Interactive Card -->
+      <section class="details-section" id="highlights">
+        <!-- Left Card (Livestream 3-Video Showcase Grid) -->
+        <div class="details-left-card video-showcase-card">
+          <div class="video-showcase-header">
+            <h2 class="details-title">VIDEO LIVESTREAM</h2>
+            <p class="details-desc"></p>
+          </div>
+
+          <div class="video-grid-container">
+            <!-- Video 1 -->
+            <div
+              class="video-grid-item"
+              id="video-item-1"
+              data-video-src="https://assets.mixkit.co/videos/preview/mixkit-fashion-woman-with-silver-glitter-makeup-40175-large.mp4"
+              data-video-title="Livestream Thời Trang SAAM CLOTHES"
+            >
+              <div class="video-grid-thumb">
+                <img
+                  src="images/IMG_6893.JPG"
+                  alt="Thumbnail Video 1"
+                  id="img-video-thumb-1"
+                />
+                <div class="grid-play-overlay">
+                  <i data-lucide="play" class="grid-play-icon"></i>
+                </div>
+              </div>
+              <div class="video-grid-info">
+                <span class="video-grid-tag">SAAM CLOTHES</span>
+                <h4 class="video-grid-title"></h4>
+              </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div
+              class="video-grid-item"
+              id="video-item-2"
+              data-video-src="videos/ScreenRecording_06-18-2026 19-25-28_1.mov"
+              data-video-title="Livestream Mỹ Phẩm O FOR ORDINARY"
+            >
+              <div class="video-grid-thumb">
+                <img
+                  src="images/IMG_3165.PNG"
+                  alt="Thumbnail Video 2"
+                  id="img-video-thumb-2"
+                />
+                <div class="grid-play-overlay">
+                  <i data-lucide="play" class="grid-play-icon"></i>
+                </div>
+              </div>
+              <div class="video-grid-info">
+                <span class="video-grid-tag">ORDINARY SERUM</span>
+                <h4 class="video-grid-title"></h4>
+              </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div
+              class="video-grid-item"
+              id="video-item-3"
+              data-video-src="videos/Video Project 2.mp4"
+              data-video-title="Livestream Phụ Tùng DP AUTO"
+            >
+              <div class="video-grid-thumb">
+                <img
+                  src="images/IMG_3100.JPG"
+                  alt="Thumbnail Video 3"
+                  id="img-video-thumb-3"
+                />
+                <div class="grid-play-overlay">
+                  <i data-lucide="play" class="grid-play-icon"></i>
+                </div>
+              </div>
+              <div class="video-grid-info">
+                <span class="video-grid-tag">DP AUTO</span>
+                <h4 class="video-grid-title"></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Let's Connect Section -->
+      <section class="connect-section" id="connect">
+        <div class="connect-container">
+          <!-- Left Column: Info & Intro -->
+          <div class="connect-info-col">
+            <h2 class="connect-title">LET'S<br />CONNECT</h2>
+            <p class="connect-subtitle"></p>
+
+            <div class="connect-details-card">
+              <div class="detail-item">
+                <span class="detail-label">Email</span>
+                <a href="mailto:quetho1906@gmail.com" class="detail-value"
+                  >quetho1906@gmail.com</a
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Điện thoại</span>
+                <a href="tel:0977605472" class="detail-value">0977 605 472</a>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Socials</span>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  class="detail-value"
+                  >@quetho1906</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Contact Form -->
+          <div class="connect-form-card">
+            <form id="contact-form" class="connect-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Họ và tên</label>
+                <input
+                  type="text"
+                  id="form-name"
+                  class="form-input"
+                  placeholder="Tên của bạn..."
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  id="form-email"
+                  class="form-input"
+                  placeholder="email@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Tin nhắn</label>
+                <textarea
+                  id="form-message"
+                  class="form-textarea"
+                  rows="4"
+                  placeholder="Nhập lời nhắn của bạn ở đây..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="form-submit-btn">
+                <span>Gửi tin nhắn</span>
+                <i data-lucide="send" class="submit-btn-icon"></i>
+              </button>
+
+              <p class="form-disclaimer">
+                Thông tin của bạn sẽ được bảo mật và chuyển trực tiếp tới Quế
+                Thơ để phản hồi sớm nhất.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Image & Settings Customizer Modal -->
+    <div class="uploader-modal-overlay" id="uploader-modal">
+      <div class="uploader-modal-card">
+        <div class="modal-header">
+          <h2>Cài đặt Giao diện & Ảnh</h2>
+          <button class="close-modal-btn" id="close-uploader-btn">
+            &times;
+          </button>
+        </div>
+        <p class="modal-intro">
+          Tùy chỉnh font chữ và ảnh của riêng bạn để xem trước theo thời gian
+          thực trên portfolio này!
+        </p>
+
+        <div class="font-settings-section">
+          <h3 class="modal-section-title">Cấu hình Font Chữ</h3>
+          <div class="font-settings-grid">
+            <div class="font-select-group">
+              <label for="font-display-select">Font Tiêu đề & Logo</label>
+              <select id="font-display-select" class="custom-select">
+                <option value="'Montserrat', sans-serif" selected>
+                  Montserrat (Hình khối tròn - Hỗ trợ Tiếng Việt)
+                </option>
+                <option value="'Space Grotesk', sans-serif">
+                  Space Grotesk (Thiết kế Tech/Y2K)
+                </option>
+                <option value="'Be Vietnam Pro', sans-serif">
+                  Be Vietnam Pro (Chuẩn Việt tối giản)
+                </option>
+                <option value="'Playfair Display', serif">
+                  Playfair Display (Cổ điển/Sang trọng)
+                </option>
+                <option value="'Patrick Hand', cursive">
+                  Patrick Hand (Nghệ thuật viết tay)
+                </option>
+                <option value="'Syne', sans-serif">
+                  Syne (Lỗi hiển thị Tiếng Việt có dấu)
+                </option>
+              </select>
+            </div>
+            <div class="font-select-group">
+              <label for="font-body-select">Font Nội dung & CV</label>
+              <select id="font-body-select" class="custom-select">
+                <option value="'Inter', sans-serif">Inter (Mặc định)</option>
+                <option value="'Be Vietnam Pro', sans-serif">
+                  Be Vietnam Pro (Chuẩn Việt)
+                </option>
+                <option value="'Roboto', sans-serif">Roboto (Cơ bản)</option>
+                <option value="Arial, sans-serif">Arial (Hệ thống)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <h3
+          class="modal-section-title"
+          style="margin-top: 10px; padding: 0 32px"
+        >
+          Tải Ảnh Lên (Xem thử)
+        </h3>
+        <div class="upload-rows-container">
+          <!-- Row 1 -->
+          <div class="upload-row">
+            <div class="upload-preview-box">
+              <img
+                src="images/IMG_3353.JPG"
+                alt="Preview 1"
+                id="preview-main-left"
+              />
+            </div>
+            <div class="upload-info">
+              <span class="upload-label"
+                >Ảnh lớn bên trái (Không gian Chanel)</span
+              >
+              <code class="file-name-hint">images/IMG_3353.JPG</code>
+              <label class="custom-file-input">
+                Chọn ảnh
+                <input
+                  type="file"
+                  accept="image/*"
+                  class="modal-file-input"
+                  data-target="img-main-left"
+                  data-preview="preview-main-left"
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="upload-row">
+            <div class="upload-preview-box">
+              <img
+                src="images/IMG_1446.JPG"
+                alt="Preview 2"
+                id="preview-center-cutout"
+              />
+            </div>
+            <div class="upload-info">
+              <span class="upload-label">Ảnh cắt hình lục giác ở giữa</span>
+              <code class="file-name-hint">images/IMG_1446.JPG</code>
+              <label class="custom-file-input">
+                Chọn ảnh
+                <input
+                  type="file"
+                  accept="image/*"
+                  class="modal-file-input"
+                  data-target="img-center-cutout"
+                  data-preview="preview-center-cutout"
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Row 6 (Middle Left Collage Image) -->
+          <div class="upload-row">
+            <div class="upload-preview-box">
+              <img
+                src="images/IMG_0644.JPG"
+                alt="Preview 6"
+                id="preview-middle-left"
+              />
+            </div>
+            <div class="upload-info">
+              <span class="upload-label">Ảnh đè giữa bên trái</span>
+              <code class="file-name-hint">images/IMG_0644.JPG</code>
+              <label class="custom-file-input">
+                Chọn ảnh
+                <input
+                  type="file"
+                  accept="image/*"
+                  class="modal-file-input"
+                  data-target="img-middle-left"
+                  data-preview="preview-middle-left"
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="upload-row">
+            <div class="upload-preview-box">
+              <img
+                src="images/IMG_0645.JPG"
+                alt="Preview 3"
+                id="preview-right-standing"
+              />
+            </div>
+            <div class="upload-info">
+              <span class="upload-label"
+                >Ảnh người mẫu đứng (Bên phải collage)</span
+              >
+              <code class="file-name-hint">images/IMG_0645.JPG</code>
+              <label class="custom-file-input">
+                Chọn ảnh
+                <input
+                  type="file"
+                  accept="image/*"
+                  class="modal-file-input"
+                  data-target="img-right-standing"
+                  data-preview="preview-right-standing"
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="upload-row">
+            <div class="upload-preview-box">
+              <img
+                src="images/IMG_5161.JPG"
+                alt="Preview 4"
+                id="preview-earrings-detail"
+              />
+            </div>
+            <div class="upload-info">
+              <span class="upload-label"
+                >Chi tiết khuyên tai (Thẻ dưới cùng bên trái)</span
+              >
+              <code class="file-name-hint">images/IMG_5161.JPG</code>
+              <label class="custom-file-input">
+                Chọn ảnh
+                <input
+                  type="file"
+                  accept="image/*"
+                  class="modal-file-input"
+                  data-target="img-earrings-detail"
+                  data-preview="preview-earrings-detail"
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Row 5 -->
+          <div class="upload-row">
+            <div class="upload-preview-box">
+              <img
+                src="images/Gemini_Generated_Image_r95746r95746r957.png"
+                alt="Preview 5"
+                id="preview-insta-avatar"
+              />
+            </div>
+            <div class="upload-info">
+              <span class="upload-label"
+                >Ảnh đại diện Instagram (Thẻ trên cùng bên phải)</span
+              >
+              <code class="file-name-hint"
+                >images/Gemini_Generated_Image_r95746r95746r957.png</code
+              >
+              <label class="custom-file-input">
+                Chọn ảnh
+                <input
+                  type="file"
+                  accept="image/*"
+                  class="modal-file-input"
+                  data-target="img-insta-avatar"
+                  data-preview="preview-insta-avatar"
+                />
+              </label>
+            </div>
+          </div>
+
+          <div class="modal-section-title" style="margin-top: 15px">
+            Tải Video MP4 Lên Xem Thử
+          </div>
+          <p
+            class="modal-intro"
+            style="
+              padding: 10px 0;
+              border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            "
+          >
+            Chọn các file video từ máy tính để chèn và xem thử trên trang.
+          </p>
+
+          <!-- Video 1 upload row -->
+          <div class="upload-row">
+            <div class="upload-info">
+              <span class="upload-label"
+                >Video Livestream 1 (SAAM CLOTHES)</span
+              >
+              <code class="file-name-hint">videos/video1.mp4</code>
+              <label class="custom-file-input">
+                Chọn video 1 (MP4)
+                <input
+                  type="file"
+                  accept="video/mp4"
+                  class="modal-video-input"
+                  data-target-id="video-item-1"
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Video 2 upload row -->
+          <div class="upload-row">
+            <div class="upload-info">
+              <span class="upload-label"
+                >Video Livestream 2 (O FOR ORDINARY)</span
+              >
+              <code class="file-name-hint">videos/video2.mp4</code>
+              <label class="custom-file-input">
+                Chọn video 2 (MP4)
+                <input
+                  type="file"
+                  accept="video/mp4"
+                  class="modal-video-input"
+                  data-target-id="video-item-2"
+                />
+              </label>
+            </div>
+          </div>
+
+          <!-- Video 3 upload row -->
+          <div class="upload-row">
+            <div class="upload-info">
+              <span class="upload-label">Video Livestream 3 (DP AUTO)</span>
+              <code class="file-name-hint">videos/video3.mp4</code>
+              <label class="custom-file-input">
+                Chọn video 3 (MP4)
+                <input
+                  type="file"
+                  accept="video/mp4"
+                  class="modal-video-input"
+                  data-target-id="video-item-3"
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal-footer"
+          style="display: flex; gap: 15px; justify-content: center; width: 100%"
+        >
+          <button
+            class="action-btn-black close-modal-action-btn"
+            id="finish-upload-btn"
+            style="flex: 1"
+          >
+            Hoàn thành & Xem thử
+          </button>
+          <button
+            class="action-btn-black"
+            id="reset-uploader-btn"
+            style="
+              background: #e74c3c;
+              border-color: #e74c3c;
+              color: white;
+              flex: 1;
+            "
+          >
+            Khôi phục mặc định
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video Lightbox Modal (TikTok/Instagram style floating layout) -->
+    <div class="lightbox-modal-overlay" id="video-lightbox">
+      <div class="lightbox-card">
+        <button
+          class="close-lightbox-btn"
+          id="close-lightbox-btn"
+          aria-label="Đóng video"
+        >
+          <i data-lucide="x"></i>
+        </button>
+        <div class="lightbox-video-container">
+          <video
+            id="lightbox-video-player"
+            src=""
+            controls
+            autoplay
+            loop
+          ></video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script File -->
+    <script src="script.js"></script>
+  </body>
+</html>
